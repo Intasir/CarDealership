@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #3d3b38;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main_Controller">
+   <children>
+      <Label layoutY="111.0" prefHeight="59.0" prefWidth="503.0" style="-fx-background-color: #5d95ef;" text="                  Car Dealership Agency">
+         <font>
+            <Font name="Broadway" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="181.0" prefHeight="59.0" prefWidth="321.0" style="-fx-background-color: #62d5db;" text="           Customer Information">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="107.0" fitWidth="313.0" layoutX="93.0" layoutY="1.0">
+         <image>
+            <Image url="@../../../../Desktop/carlogo.jpg" />
+         </image>
+      </ImageView>
+      <TextField layoutX="90.0" layoutY="250.0" prefHeight="59.0" prefWidth="321.0" promptText="Name" style="-fx-background-color: #f7f9f7;">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="89.0" layoutY="322.0" prefHeight="59.0" prefWidth="321.0" promptText="Address" style="-fx-background-color: #f7f9f7;">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="87.0" layoutY="393.0" prefHeight="59.0" prefWidth="321.0" promptText="Phone" style="-fx-background-color: #f7f9f7;">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="87.0" layoutY="465.0" prefHeight="59.0" prefWidth="223.0" style="-fx-background-color: #b7c9bb;" text="     Do You Need Loan?">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="yes" layoutX="318.0" layoutY="465.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="77.0" style="-fx-background-color: #b7c9bb;" text="Yes">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="No" layoutX="411.0" layoutY="465.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="87.0" style="-fx-background-color: #b7c9bb;" text="No">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </RadioButton>
+      <Button layoutY="560.0" mnemonicParsing="false" onAction="#goBack" prefHeight="50.0" prefWidth="131.0" text="Back">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="373.0" layoutY="560.0" mnemonicParsing="false" onAction="#customerInformation" prefHeight="50.0" prefWidth="131.0" text="Submit">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
